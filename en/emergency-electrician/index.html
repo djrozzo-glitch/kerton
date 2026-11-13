@@ -102,6 +102,7 @@ try{if(localStorage.getItem('kerton-consent')==='granted'){gtag('consent','updat
 <div class="wrap">
 <span>© <span id="yr">2026</span> Kerton Onderhoudsbedrijf · KvK 90056310 · 085 333 48 44</span>
 <span>Electrician · 24/7 emergency service</span>
+<span class="foot-links"><a href="/en/privacy-statement/">Privacy statement</a><button class="linkbtn" id="ck-open" type="button">Cookie settings</button></span>
 </div>
 </footer>
 <nav aria-label="Contact" class="callbar">
@@ -111,7 +112,7 @@ try{if(localStorage.getItem('kerton-consent')==='granted'){gtag('consent','updat
 </div>
 <script>(function(){document.getElementById('yr').textContent=new Date().getFullYear();var c=document.getElementById('copy');if(!c)return;c.addEventListener('click',function(){var lbl=c.innerHTML;function done(){c.textContent='Copied';setTimeout(function(){c.innerHTML=lbl},1600)}function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('num'));var w=getSelection();w.removeAllRanges();w.addRange(r)}try{navigator.clipboard.writeText('+31853334844').then(done,sel)}catch(e){sel()}})})();</script>
 <div aria-label="Cookies" aria-live="polite" class="cookie" hidden="" id="cookie" role="dialog">
-<p><b>Cookies.</b> We use Google analytics and advertising cookies to measure how the site is used. Only with your consent.</p>
+<p><b>Cookies.</b> We use Google analytics and advertising cookies to measure how the site is used. Only with your consent. <a href="/en/privacy-statement/">More info</a></p>
 <div class="cookie-btns"><button id="ck-no" type="button">Decline</button><button class="ok" id="ck-yes" type="button">Accept</button></div>
 </div>
 <script>
@@ -133,5 +134,6 @@ try{if(localStorage.getItem('kerton-consent')==='granted'){gtag('consent','updat
   });
 })();
 </script>
+<script>(function(){var o=document.getElementById("ck-open"),b=document.getElementById("cookie");if(o&&b)o.addEventListener("click",function(){b.hidden=false;var y=document.getElementById("ck-yes");if(y)y.focus()})})();</script>
 </body>
 </html>
