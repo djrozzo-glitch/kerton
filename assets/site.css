@@ -212,3 +212,25 @@ img{max-width:100%}body{margin:0}[hidden]{display:none!important}
 .cookie button{min-height:44px;border-radius:10px;font:700 .95rem/1 var(--f-body);cursor:pointer;border:1.5px solid color-mix(in srgb,var(--panel-ink) 35%,transparent);background:transparent;color:var(--panel-ink)}
 .cookie button.ok{background:var(--volt);color:var(--volt-ink);border-color:var(--volt)}
 @media (min-width:860px){.cookie{bottom:16px;right:16px;left:auto;margin:0}}
+
+/* service pages */
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding-block:14px 0;font-size:.85rem;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.sign-grid{list-style:none;margin:0;padding:0;display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:620px){.sign-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.sign-grid{grid-template-columns:repeat(3,1fr)}}
+.sign-grid li{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--volt);border-radius:10px;padding:14px 16px;display:grid;gap:4px;min-width:0}
+.sign-grid b{font-weight:700}
+.sign-grid span{color:var(--muted);font-size:.95rem}
+.signs{padding-block:8px 56px}
+@media (min-width:860px){.steps-4 ol{grid-template-columns:repeat(4,1fr)}}
+.price{padding-block:0 56px}
+.price-grid{display:grid;gap:8px}
+.price-box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:14px;min-width:0}
+.price-box ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.price-box p{font-weight:600}
+@media (min-width:860px){.price-grid{grid-template-columns:1fr 1.6fr;gap:56px;align-items:start}}
+.near-dark{color:var(--panel-muted);font-size:.93rem}
+.back{padding-block:28px 48px}
+.back a{font-weight:600}
+.more-link{font-weight:700;font-size:.95rem;color:var(--ink);text-underline-offset:3px}
