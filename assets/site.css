@@ -146,6 +146,26 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 .cities li:first-child{border-color:var(--volt);background:var(--volt);color:var(--volt-ink)}
 .cities li.more{border-style:dashed;color:var(--muted);background:transparent}
 @media (min-width:860px){.area-grid{grid-template-columns:1fr 1fr;gap:56px;align-items:center}.area-grid .sec-head{margin-bottom:0}}
+/* trust bar */
+.trust{border-block:1px solid var(--line);background:var(--surface)}
+.trust-list{list-style:none;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:0;padding-block:6px}
+.trust-list li{display:grid;gap:2px;padding:12px 10px 12px 0;min-width:0}
+.trust-list b{font:700 .95rem/1.2 var(--f-mono);font-variant-numeric:tabular-nums}
+.trust-list span{color:var(--muted);font-size:.86rem;line-height:1.35}
+@media (min-width:860px){.trust-list{grid-template-columns:repeat(4,1fr);padding-block:10px}.trust-list li{padding:14px 18px 14px 0;border-right:1px solid var(--line)}.trust-list li:last-child{border-right:0}.trust-list li+li{padding-left:18px}}
+/* self-check */
+.check{padding-block:56px 0}
+.check-grid{display:grid;gap:8px}
+.check-steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:c;min-width:0}
+.check-steps li{counter-increment:c;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.check-steps li::before{content:counter(c);grid-row:span 2;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--bg);font:700 .9rem/1 var(--f-mono)}
+.check-steps h3{font-size:1.05rem;font-stretch:100%;line-height:1.3;align-self:center}
+.check-steps p{color:var(--muted);font-size:.95rem;min-width:0}
+.check-steps li.warn{background:var(--panel);border-color:var(--panel);color:var(--panel-ink)}
+.check-steps li.warn::before{content:"!";background:var(--volt);color:var(--volt-ink)}
+.check-steps li.warn p{color:var(--panel-muted)}
+@media (min-width:860px){.check-grid{grid-template-columns:1fr 1.6fr;gap:56px;align-items:start}}
+.near{color:var(--muted);font-size:.93rem;max-width:60ch}
 /* faq */
 .faq{padding-block:0 56px}
 .faq-grid{display:grid;gap:8px}
